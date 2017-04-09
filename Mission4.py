@@ -28,5 +28,5 @@ while True:
  print("temperature = ",read_temp())
  content = urlopen("http://10.42.0.187:3000/20145331?tmp="+str(read_temp()))
  print("file save");
- time.sleep(11)
+ time.sleep(10)
 

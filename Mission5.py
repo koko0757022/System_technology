@@ -30,4 +30,4 @@ while True:
  print("file save");
  content2 = urlopen("https://api.thingspeak.com/update?api_key=X9EZDZONZ1W6WTK7&field1="+str(read_temp()))
  print("-------thingspeak_save-------");
- time.sleep(5)
+ time.sleep(10)
