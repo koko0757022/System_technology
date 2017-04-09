@@ -23,7 +23,11 @@ def read_temp():
   temp_c = float(temp_string) / 1000.0
   temp_f = temp_c * 9.0 / 5.0 + 32.0
   return temp_c
+count = 0
 while True:
- print(read_temp())
- content = urlopen("https://api.thingspeak.com/update?api_key=X9EZDZONZ1W6WTK7&field1="+str(read_temp()))
- time.sleep(10)
+ print("temperature = ",read_temp())
+ content1 = urlopen("http://10.42.0.187:3000/20145331?tmp="+str(read_temp()))
+ print("file save");
+ content2 = urlopen("https://api.thingspeak.com/update?api_key=X9EZDZONZ1W6WTK7&field1="+str(read_temp()))
+ print("-------thingspeak_save-------");
+ time.sleep(5)
