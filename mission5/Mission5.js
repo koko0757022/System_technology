@@ -58,7 +58,7 @@ app.get("/20145331", function(req, res) {
     html += "<tr><td>Seq#<td>Time Stamp<td>Temperature";
 
     for (var i=0; i< 15 /*rows.length*/; i++) {
-       html += "<tr><td>Seq#<td>Time Stamp<td>Temperature";
+       html += "<tr><td>"+rows[i].seq+"<td>"+rows[i].time+"<td>"+rows[i].value;
     }
 
     
