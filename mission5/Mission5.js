@@ -17,7 +17,7 @@ r={};
 r.type='T';
 r.device='102';
 r.unit='0';
-r.ip="192.168.0.2";
+r.ip="10.42.0.187";
 r.seq = count;
 r.value=10.25;
 var tempvalue = 0;
@@ -58,7 +58,7 @@ app.get("/20145331", function(req, res) {
     html += "<tr><td>Seq#<td>Time Stamp<td>Temperature";
 
     for (var i=0; i< 15 /*rows.length*/; i++) {
-       html += "<tr><td>Seq#<td>Time Stamp<td>Temperature";
+       html += "<tr><td>"+rows[i].seq+"<td>"+rows[i].time+"<td>"+rows[i].value;
     }
 
     
